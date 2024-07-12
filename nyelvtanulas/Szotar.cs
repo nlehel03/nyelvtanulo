@@ -13,7 +13,7 @@ namespace nyelvtanulas
         {
             szavak=new Dictionary<string, string>();
         }
-        public void feltolt(string kulcsnyelv, params string[] fajlok)
+        public void feltolt(string kulcsnyelv, string[] fajlok)
         {
             if(kulcsnyelv=="angol")
             {
@@ -56,7 +56,7 @@ namespace nyelvtanulas
             szavak.Remove(kulcs);
         }
 
-        public void temaTorles(string kulcsnyelv, params string[] fajlok)
+        public void temaTorles(string kulcsnyelv, string[] fajlok)
         {
             if (kulcsnyelv == "angol")
             {
