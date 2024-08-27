@@ -1,4 +1,5 @@
 using System.IO.Pipes;
+using System.Threading.Tasks;
 
 namespace nyelvtanulas;
 
@@ -11,7 +12,6 @@ internal class Jatek
         szotar = sz;
         menu = m;
     }
-    internal int pont = 0;
 
     public KeyValuePair<string,string> randomElem()
     {
@@ -35,16 +35,23 @@ internal class Jatek
         if (random.Value == answer)
         {
             Console.WriteLine("Helyes!");
-            pont++;
+            
         }
-        else if (answer == " ")
+        else if (answer == "")
         {
-            menu.mainMenu();
+            endGame();
         }
         else
         {
             Console.WriteLine("Sajnos a válasz helytelen. A helyes megfejtés: "+random.Value);
         }
+    }
+
+    public void endGame()
+    {
+        Console.WriteLine("Játék vége\nA menübe visszalépéshez nyomj egy entert");
+        Console.ReadLine();
+        menu.mainMenu();
     }
     
 

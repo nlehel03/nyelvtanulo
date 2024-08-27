@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qi3VZIPpemG67lxuts3SG4nSGfuI9yrjuG+E5Ne1Oi8iTMakJp8CDidi12u6P+l5KytkLIbXw32Lo8/iwTcU7A==",
+  "dgSpecHash": "Me2Am17atGOS1pxOzkoez9fMHrAr8HjVh/K7qYbFXbjmGeSWkXZViS8J6Ej3vL/VH7JUru3inu+sFZiBFGffgQ==",
   "success": true,
   "projectFilePath": "/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/nyelvtanulas.csproj",
-  "expectedPackageFiles": [
-    "/home/lehel/.nuget/packages/microsoft.netcore.app.ref/7.0.19/microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
-    "/home/lehel/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.19/microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
-    "/home/lehel/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.19/microsoft.netcore.app.host.linux-x64.7.0.19.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

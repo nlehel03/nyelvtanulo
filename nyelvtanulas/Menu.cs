@@ -1,5 +1,7 @@
 //using nyelvtanulas.Szotar;
 
+using System.Net.Mime;
+
 namespace nyelvtanulas;
 
 public class Menu
@@ -37,16 +39,34 @@ public class Menu
         }
         else if (input == 2)
         {
-            Jatek j = new Jatek( dict, this);
+            Jatek j = new Jatek(dict, this);
+            j.loop();
         }
         else if (input == 3)
         {
             Console.WriteLine("Add meg a törölni kívánt szót.");
             dict.szoTorles(Console.ReadLine());
+            mainMenu();
         }
+        else if (input == 4)
+        {
+            temaTorlesMenu();
+        }
+        else if (input == 5)
+        {
+            Environment.Exit(0);
+        }
+        else
+        {
+            Console.WriteLine("valószínüleg rossz bemeneti adatot adtál meg\nNyomjon egy ENTER-t a visszalépéshez");
+            Console.ReadLine();
+            mainMenu();
+        }
+
 
     }
 
+    
     public void feltoltMenu()
     {
         Console.Clear();
@@ -60,8 +80,7 @@ public class Menu
         int input = int.Parse(Console.ReadLine());
         Console.Clear();
         Console.WriteLine();
-        Console.WriteLine(
-            "Add meg a betölteni kívánt fájlok nevét. (A féjlokat a 'nyelvtanulas/bin/Debug/net7.0' mappába kell tenned)");
+        Console.WriteLine("Add meg a betölteni kívánt fájlok nevét. (A fájlokat a 'nyelvtanulas/bin/Debug/net7.0' mappába kell tenned)");
         Console.WriteLine("Külön sorokba írd a fájl nevét, ha végeztél, akkor küldj egy üres sort az Enterrel");
         List<string> fajlok = new List<string>();
         string tmp = "";
@@ -78,26 +97,60 @@ public class Menu
         if (input == 1)
         {
             dict.feltolt("angol", files);
+            mainMenu();
         }
         else if (input == 2)
         {
             dict.feltolt("magyar", files);
+            mainMenu();
         }
         else if (input == 3)
         {
             dict.feltolt("magyar", files);
             dict.feltolt("angol", files);
+            mainMenu();
         }
         else if (input == 4)
         {
             mainMenu();
         }
-        else
+        else if (input == 5)
         {
-            Exception e = new Exception("Valamit rosszul adtál meg");
+            Environment.Exit(0);
         }
+        
     }
 
+    public void temaTorlesMenu()
+    {
+        Console.WriteLine("Add meg a kulcsnyelvet\n1-magyar\n2-angol");
+        string key = Console.ReadLine();
+
+        Console.WriteLine(
+            "Add meg a betölteni kívánt fájlok nevét. (A fájlokat a 'nyelvtanulas/bin/Debug/net7.0' mappába kell tenned)");
+        Console.WriteLine("Külön sorokba írd a fájl nevét, ha végeztél, akkor küldj egy üres sort az Enterrel");
+        List<string> fajlok = new List<string>();
+        string tmp = "";
+        do
+        {
+            tmp = Console.ReadLine();
+            if (tmp != "")
+            {
+                fajlok.Add(tmp);
+            }
+        } while (tmp != "");
+
+        string[] files = fajlok.ToArray();
+        if (key == "1")
+        { 
+            dict.temaTorles("angol", files);   
+        }
+        else if (key == "2")
+        { 
+            dict.temaTorles("magyar", files);   
+        }
+        mainMenu();
+    }
 
 
 

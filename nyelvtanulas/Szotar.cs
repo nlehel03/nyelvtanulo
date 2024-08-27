@@ -22,7 +22,7 @@ namespace nyelvtanulas
                     using (StreamReader sr = new StreamReader(item))
                         while (!sr.EndOfStream)
                     {
-                        string[] szopar=sr.ReadLine().Split(' ');
+                        string[] szopar=sr.ReadLine().Split('=');
                         if (!szavak.ContainsKey(szopar[0]) && szopar.Length == 2)
                         {
                             szavak.Add(szopar[0], szopar[1]);
@@ -37,7 +37,7 @@ namespace nyelvtanulas
                     using (StreamReader sr = new StreamReader(item))
                         while (!sr.EndOfStream)
                         {
-                            string[] szopar = sr.ReadLine().Split(' ');
+                            string[] szopar = sr.ReadLine().Split('=');
                             if (!szavak.ContainsKey(szopar[1])&&szopar.Length==2)
                             {
                                 szavak.Add(szopar[1], szopar[0]);
@@ -47,7 +47,7 @@ namespace nyelvtanulas
             }
             else
             {
-                throw new Exception("nem támogatott nyelv: "+kulcsnyelv);
+                Console.WriteLine("nem támogatott nyelv");
             }
         }
 
@@ -60,6 +60,7 @@ namespace nyelvtanulas
         {
             if (kulcsnyelv == "angol")
             {
+                
                 foreach (string item in fajlok)
                 {
                     using (StreamReader sr = new StreamReader(item))

@@ -1,0 +1,15 @@
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/bin/Debug/net8.0/nyelvtanulas
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/bin/Debug/net8.0/nyelvtanulas.deps.json
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/bin/Debug/net8.0/nyelvtanulas.runtimeconfig.json
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/bin/Debug/net8.0/nyelvtanulas.dll
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/bin/Debug/net8.0/nyelvtanulas.pdb
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.GeneratedMSBuildEditorConfig.editorconfig
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.AssemblyInfoInputs.cache
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.AssemblyInfo.cs
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.csproj.CoreCompileInputs.cache
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.sourcelink.json
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.dll
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/refint/nyelvtanulas.dll
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.pdb
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/nyelvtanulas.genruntimeconfig.cache
+/home/lehel/programozas/c#/nyelvtanulo/nyelvtanulas/obj/Debug/net8.0/ref/nyelvtanulas.dll
